@@ -1,10 +1,10 @@
 import os
 import numpy as np
-import faiss
 import openai
 from typing import List, Dict, Any
 import logging
 import asyncio
+from sklearn.metrics.pairwise import cosine_similarity
 
 logger = logging.getLogger(__name__)
 
